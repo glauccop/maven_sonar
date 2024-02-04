@@ -6,7 +6,7 @@
             agent any
             steps {
               withSonarQubeEnv('SonarQube') {
-                mvn clean package sonar:sonar
+               cmd "mvn clean package sonar:sonar"
               }
             }
           }
